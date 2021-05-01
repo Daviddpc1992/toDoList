@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/datos.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>ToDoList</title>
 </head>
+
 <body>
-    
 
+    <h1>To Do List</h1> 
 
+    <section id="form" class="shadow-lg p-3 mb-5 bg-body rounded">
 
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="¿Que tarea quieres incluir?"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+        <div class="row ">
+            <div class="col-12 col-sm-6">
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" value="2021-01-01"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 ">
+                <div class="input-group mb-3">
+                    <input type="time" class="form-control" value="11:11"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+
+                </div>
+            </div>
+        </div>
+        <select class="form-select mb-3 mt-3" aria-label="Default select example">
+      
+            <option selected>Que prioridad tiene...</option>
+            <option value="1" style="background-color: rgb(80, 222, 193 );">Nah ya lo haré</option>
+            <option value="2" style="background-color: rgb(222, 184, 58);" >Puff lo tengo que hacer...</option>
+            <option value="3" style="background-color: rgb(213, 35, 222);">DIOS! lo tengo que hacer</option>
+          </select>
+
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-lg btn-secondary "><img class="cerrar" src="./img/plus.svg" alt="add"
+                width="15px"></button>
+         
+          </div>
+
+       
+          <div class="spinner-border mb-3 mt-3 " style="width: 1rem; height: 1rem; margin-left: 48%;" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Tarea guardada</strong>
+            <button type="button" class="btn-close cerrar" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="alert alert-warning alert-dismissible fade show" style="background-color:rgb(137, 30, 143 ); color:wheat" role="alert">
+            <strong>Ups! revisa los datos</strong>
+            <button type="button" class="btn-close cerrar" data-bs-dismiss="alert" aria-label="Close" ></button>
+        </div>
+        <hr>
+
+      
+        <div class="row">
+            <ul class="lista col-11 row text-center">
+                <li class="col-12 col-sm-4 ">Tarea pendiente</li>
+                <li class="col-12 col-sm-4 ">Fecha </li>
+                <li class="col-12 col-sm-4 ">Importancia</li>
+            </ul>
+            <button type="button" class="btn-close col-1 cerrar" aria-label="Close "></button>
+        </div>
+       
+
+    </section>
     <script src="js/funciones.js"></script>
 </body>
+
 </html>
