@@ -118,3 +118,20 @@ function prioridadEvento(event) {
 
 
 }
+
+//BORRAR REVISAR
+
+
+let deleted = document.querySelector('.eliminar')
+let capturado = document.querySelector('.capturado')
+
+deleted.addEventListener('click', eliminarEvento);
+
+function eliminarEvento(click) {
+
+    let list = document.querySelector('#listado')
+
+    list.removeChild(list.childNodes[0,1,2,3,4,5]);
+
+
+}
