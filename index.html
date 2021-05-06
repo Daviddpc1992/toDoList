@@ -14,70 +14,73 @@
 
 <body>
 
-    <h1>To Do List</h1> 
+    <h1>To Do List</h1>
 
     <section id="form" class="shadow-lg p-3 mb-5 bg-body rounded">
 
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="¿Que tarea quieres incluir?"
-                aria-label="Recipient's username" aria-describedby="button-addon2">
+                aria-label="Recipient's username" aria-describedby="button-addon2" id="tarea">
         </div>
         <div class="row ">
             <div class="col-12 col-sm-6">
                 <div class="input-group mb-3">
-                    <input type="date" class="form-control" value="2021-01-01"
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input type="date" class="form-control" value="2021-01-01" aria-label="Recipient's username"
+                        aria-describedby="button-addon2" id="date">
                 </div>
             </div>
             <div class="col-12 col-sm-6 ">
                 <div class="input-group mb-3">
-                    <input type="time" class="form-control" value="11:11"
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input type="time" class="form-control" value="11:11" aria-label="Recipient's username"
+                        aria-describedby="button-addon2" id="hour">
                 </div>
 
-                </div>
             </div>
         </div>
-        <select class="form-select mb-3 mt-3" aria-label="Default select example">
-      
-            <option selected>Que prioridad tiene...</option>
-            <option value="1" style="background-color: rgb(80, 222, 193 );">Nah ya lo haré</option>
-            <option value="2" style="background-color: rgb(222, 184, 58);" >Puff lo tengo que hacer...</option>
-            <option value="3" style="background-color: rgb(213, 35, 222);">DIOS! lo tengo que hacer</option>
-          </select>
+        </div>
+       
+        <select id="prioridad" class="form-select mb-3 mt-3 prioridad" aria-label="Default select example">
+            
+            <option value="1" class="low" style="background-color: rgb(80, 222, 193 );">Nah ya lo haré</option>
+            <option value="2" class="medium" style="background-color: rgb(222, 184, 58);">Puff lo tengo que hacer...
+            </option>
+            <option value="3" class="high" style="background-color: rgb(238, 94, 101);">DIOS! lo tengo que hacer
+            </option>
+        </select>
 
         <div class="d-grid gap-2">
-            <button type="button" class="btn btn-lg btn-secondary "><img class="cerrar" src="./img/plus.svg" alt="add"
-                width="15px"></button>
-         
-          </div>
+            <button type="button" id="add" class="btn btn-outline-secondary"><img class="cerrar" src="./img/plus.svg"
+                    alt="add" width="25px"></button>
 
+        </div>
+
+        
+        <div id="ok"class="alert alert-warning alert-dismissible fade show" role="alert">Tarea guardada correctamente
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        
        
-          <div class="spinner-border mb-3 mt-3 " style="width: 1rem; height: 1rem; margin-left: 48%;" role="status">
-            <span class="visually-hidden"></span>
-          </div>
-
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Tarea guardada</strong>
-            <button type="button" class="btn-close cerrar" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-
-        <div class="alert alert-warning alert-dismissible fade show" style="background-color:rgb(137, 30, 143 ); color:wheat" role="alert">
-            <strong>Ups! revisa los datos</strong>
-            <button type="button" class="btn-close cerrar" data-bs-dismiss="alert" aria-label="Close" ></button>
-        </div>
         <hr>
-
       
-        <div class="row">
+        <div id="filtrado" class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" value="1" style="background-color: rgb(80, 222, 193); color: black"
+                class="btn btn-success">Baja</button>
+            <button type="button" value="2" style="background-color: rgb(222, 184, 58);"
+                class="btn btn-warning">Media</button>
+            <button type="button" value="3" style="background-color: rgb(238, 94, 101);color: black"
+                class="btn btn-danger">Alta</button>
+        </div>
+
+        <section id="listado">
+            <!--   <div class="row capturado">
             <ul class="lista col-11 row text-center">
                 <li class="col-12 col-sm-4 ">Tarea pendiente</li>
                 <li class="col-12 col-sm-4 ">Fecha </li>
                 <li class="col-12 col-sm-4 ">Importancia</li>
             </ul>
-            <button type="button" class="btn-close col-1 cerrar" aria-label="Close "></button>
-        </div>
-       
+            <button type="button" class="btn-close col-1 cerrar eliminar" aria-label="Close"></button>
+        </div>-->
+        </section>
 
     </section>
     <script src="js/funciones.js"></script>
