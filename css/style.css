@@ -1,0 +1,132 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Permanent+Marker&display=swap');
+
+/*    font-family: 'Mandali', sans-serif;
+    font-family: 'Permanent Marker', cursive;*/
+
+body{
+    
+    background: radial-gradient(
+        farthest-side at bottom left,
+        rgba(255, 0, 255, 0.5), 
+        #246756
+      ),
+      radial-gradient(
+        farthest-corner at bottom right,
+        rgba(255, 50, 50, 0.5), 
+        #246756 400px
+      );
+}
+*{
+    font-family: 'Mandali', sans-serif;
+    font-size: 1em;    
+}
+h1{
+    padding: 15px;
+    text-align: center;
+    font-size: 3.3em!important;
+    color:lightgray;
+    font-family: 'Permanent Marker', cursive;
+  
+}
+input{
+    border: none!important;
+    border-bottom: 2px solid rgb(228, 228, 228)!important;
+    border-radius: 0px!important;
+}
+#form{
+    width: 60%;
+    margin: auto;
+    
+}
+
+.lista{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: inline-block;
+    
+}
+#add{
+border: none;
+width: 10%;
+margin: auto;
+
+}
+#add:hover{
+    background-color: rgba(128, 128, 128, 0);
+}
+#add img{
+    color: red!important;
+}
+
+.btn-close{
+    font-size: 15px;
+margin: auto!important;
+
+}
+.btn-close:focus{
+    opacity: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 109, 253, 0);
+}
+.cerrar{
+    transition: 0.3s;
+}
+.cerrar:hover{
+
+    transform: rotate(90deg);
+
+}
+
+.low{
+
+    
+    border-bottom: 2px solid rgb(80, 222, 193 );
+}
+
+.low:hover{
+
+background-color: rgb(80, 222, 193 );
+
+}
+.medium{
+    border-bottom: 2px solid  rgb(222, 184, 58);
+  
+}
+.medium:hover{
+    background-color:rgb(222, 184, 58) ;
+}
+
+.high{
+    border-bottom:2px solid rgb(238, 94, 101);
+
+}
+
+
+.high:hover{
+    background-color:rgb(238, 94, 101)
+
+}
+
+#ok{
+    display: none;
+    background-color:  rgb(80, 222, 193);
+    border: none;
+    margin: 10px;
+}
+
+ul li {
+    color: gray;
+}
+
+@media (min-width: 576px) { 
+    *{
+        font-size: 1.1em;
+             
+    }
+    body{
+        height: 100vh;
+    }
+
+}
