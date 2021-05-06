@@ -2,6 +2,7 @@ let tarea = document.querySelector('#tarea');
 let fecha = document.querySelector('#date');
 let hora = document.querySelector('#hour')
 const add = document.querySelector('#add');
+let formulario = document.querySelector('input');
 let prioridad = document.querySelector('#prioridad')
 let listado = document.querySelector('#listado')
 let ul = document.querySelector('ul');
@@ -86,6 +87,7 @@ function avisos(click) {
 }
 
 
+
 cerrar.addEventListener('click', cerrarEvento);
 
 function cerrarEvento(click) {
@@ -119,8 +121,7 @@ function prioridadEvento(event) {
 
 }
 
-//BORRAR REVISAR
-
+//BORRAR (REVISAR SOLO ELIMINA LOS ARRAYS CITADOS)
 
 let deleted = document.querySelector('.eliminar')
 let capturado = document.querySelector('.capturado')
@@ -135,3 +136,4 @@ function eliminarEvento(click) {
 
 
 }
+

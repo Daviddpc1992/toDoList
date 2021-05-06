@@ -17,6 +17,7 @@ body{
         rgba(255, 50, 50, 0.5), 
         #246756 400px
       );
+      height: 100%;
 }
 *{
     font-family: 'Mandali', sans-serif;
