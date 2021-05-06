@@ -50,3 +50,28 @@ function pintarTodos(pLista) {
 }
 pintarTodos(eventos)
 
+//AGREGAR
+add.addEventListener('click', getDataForm);
+
+function getDataForm(event) {
+    event.preventDefault();
+    idActual++;
+
+    const nuevoEvento = {
+        id: idActual,
+        evento: tarea.value.trim(),
+        fecha: fecha.value,
+        hora: hora.value,
+        prioridad: prioridad.value,
+
+    }
+    guardarEvento(nuevoEvento, eventos)
+}
+
+function guardarEvento(pNew, pList) {
+    pList.push(pNew);
+    pintarUnEvento(pNew);
+    console.log(pNew)
+}
+
+
