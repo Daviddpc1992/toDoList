@@ -74,4 +74,25 @@ function guardarEvento(pNew, pList) {
     console.log(pNew)
 }
 
+//Alertas 
+
+
+add.addEventListener('click', avisos);
+
+function avisos(click) {
+
+    enviado.style.display = 'block';
+
+}
+
+
+cerrar.addEventListener('click', cerrarEvento);
+
+function cerrarEvento(click) {
+
+    enviado.style.display = 'none';
+
+
+
+}
 
