@@ -18,8 +18,8 @@ function pintarUnEvento(pListado) {
 
     ul.innerHTML = `<div class="row capturado">
             <ul class="lista col-11 row text-center">
-                <li class="col-12 col-sm-12 col-md-8">${pListado.evento}</li>
-                <li class="col-12 col-sm-12 col-md-4">${pListado.fecha} ${pListado.hora}  </li>
+                <li class="col-12 col-sm-6 col-md-6">${pListado.evento}</li>
+                <li class="col-12 col-sm-6 col-md-6">${pListado.fecha} ${pListado.hora}  </li>
                 
             </ul>
             <button type="button" class="btn-close col-1 cerrar eliminar" aria-label="Close" text-aling="center";></button>
