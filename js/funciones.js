@@ -96,3 +96,25 @@ function cerrarEvento(click) {
 
 }
 
+//FILTRADO
+function filtarEvento(pEvento) {
+    list.innerHTML = "";
+    let listaEventos = eventos.filter(eventos => eventos.prioridad === pEvento)
+    return listaEventos;
+}
+
+let selectorPrioridad = document.getElementById('filtrado');
+selectorPrioridad.addEventListener('click', prioridadEvento);
+
+function prioridadEvento(event) {
+    let evento = event.target.value;
+
+    if (evento !== "") {
+        const eventoFiltrado = filtarEvento(evento, fecha, hora, prioridad);
+        pintarTodos(eventoFiltrado)
+    } else {
+        pintarTodos(eventos)
+    }
+
+
+}
