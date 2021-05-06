@@ -37,7 +37,7 @@ input{
     border-radius: 0px!important;
 }
 #form{
-    width: 60%;
+    width: 50%;
     margin: auto;
     
 }
@@ -51,7 +51,8 @@ input{
 }
 #add{
 border: none;
-width: 10%;
+width: 100px;
+background-color: #80b9ab ;
 margin: auto;
 
 }
@@ -103,8 +104,6 @@ background-color: rgb(80, 222, 193 );
     border-bottom:2px solid rgb(238, 94, 101);
 
 }
-
-
 .high:hover{
     background-color:rgb(238, 94, 101)
 
@@ -115,19 +114,32 @@ background-color: rgb(80, 222, 193 );
     background-color:  rgb(80, 222, 193);
     border: none;
     margin: 10px;
+
 }
 
 ul li {
+
     color: gray;
+}
+.capturado{
+    margin: 10px!important;
 }
 
 @media (min-width: 576px) { 
     *{
-        font-size: 1.1em;
+        font-size: 1em;
              
     }
     body{
         height: 100vh;
     }
+
+}
+@media (min-width: 768px) { 
+    ul li{
+        font-size: .8em!important;
+             
+    }
+  
 
 }
