@@ -8,7 +8,7 @@
     <script src="js/datos.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>ToDoList</title>
 </head>
 
@@ -40,7 +40,6 @@
         </div>
        
         <select id="prioridad" class="form-select mb-3 mt-3 prioridad" aria-label="Default select example">
-            
             <option value="1" class="low" style="background-color: rgb(80, 222, 193 );">Nah ya lo haré</option>
             <option value="2" class="medium" style="background-color: rgb(222, 184, 58);">Puff lo tengo que hacer...
             </option>
@@ -61,7 +60,8 @@
         
        
         <hr>
-      
+        <div class="row capturado">
+            <div class="col-12 text-center  row-cols-auto" >
         <div id="filtrado" class="btn-group" role="group" aria-label="Basic mixed styles example">
             <button type="button" value="1" style="background-color: rgb(80, 222, 193); color: black"
                 class="btn btn-success">Baja</button>
@@ -70,6 +70,9 @@
             <button type="button" value="3" style="background-color: rgb(238, 94, 101);color: black"
                 class="btn btn-danger">Alta</button>
         </div>
+    </div>
+</div>
+
 
         <section id="listado">
             <!--   <div class="row capturado">

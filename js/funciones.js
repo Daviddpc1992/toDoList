@@ -2,6 +2,7 @@ let tarea = document.querySelector('#tarea');
 let fecha = document.querySelector('#date');
 let hora = document.querySelector('#hour')
 const add = document.querySelector('#add');
+let formulario = document.querySelector('input');
 let prioridad = document.querySelector('#prioridad')
 let listado = document.querySelector('#listado')
 let ul = document.querySelector('ul');
@@ -17,8 +18,8 @@ function pintarUnEvento(pListado) {
 
     ul.innerHTML = `<div class="row capturado">
             <ul class="lista col-11 row text-center">
-                <li class="col-12 col-sm-12 col-md-8">${pListado.evento}</li>
-                <li class="col-12 col-sm-12 col-md-4">${pListado.fecha} ${pListado.hora}  </li>
+                <li class="col-12 col-sm-6 col-md-6">${pListado.evento}</li>
+                <li class="col-12 col-sm-6 col-md-6">${pListado.fecha} ${pListado.hora}  </li>
                 
             </ul>
             <button type="button" class="btn-close col-1 cerrar eliminar" aria-label="Close" text-aling="center";></button>
@@ -86,6 +87,7 @@ function avisos(click) {
 }
 
 
+
 cerrar.addEventListener('click', cerrarEvento);
 
 function cerrarEvento(click) {
@@ -119,8 +121,7 @@ function prioridadEvento(event) {
 
 }
 
-//BORRAR REVISAR
-
+//BORRAR (REVISAR SOLO ELIMINA LOS ARRAYS CITADOS)
 
 let deleted = document.querySelector('.eliminar')
 let capturado = document.querySelector('.capturado')
@@ -135,3 +136,4 @@ function eliminarEvento(click) {
 
 
 }
+
